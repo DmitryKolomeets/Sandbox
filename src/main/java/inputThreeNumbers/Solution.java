@@ -6,6 +6,9 @@ package inputThreeNumbers;
 
 
 public class Solution {
+
+
+
 }
 
 
