@@ -12,7 +12,6 @@ public class Solution {
         System.out.println("Enter one number by choosing from 1 or 2 or 3");
         int num = in.nextInt();
 
-
 //                                    IF
 //        ____________________________________________________________________________________
 //        if (num == 1) {
