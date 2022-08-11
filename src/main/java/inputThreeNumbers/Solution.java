@@ -1,8 +1,6 @@
 package inputThreeNumbers;
 
-//    Необходимо написать программу, где бы пользователю предлагалось ввести число на выбор:
-//        1, 2 или 3, а программа должна сказать, какое число ввёл пользователь: 1, 2, или 3.
-//        Написать двумя способами. If и switch.
+
 
 
 import java.util.Scanner;
@@ -34,20 +32,20 @@ public class Solution {
         //                                    SWITCH
 //        ____________________________________________________________________________________
 
-        switch (num) {
-
-            case 1:
-                System.out.println("Your number is 1");
-                break;
-            case 2:
-                System.out.println("Your number is 2");
-                break;
-            case 3:
-                System.out.println("Your number is 3");
-                break;
-            default:
-                System.out.println("Wrong number. Your number is not 1 or 2 or 3. Please, enter correct number.");
-        }
+//        switch (num) {
+//
+//            case 1:
+//                System.out.println("Your number is 1");
+//                break;
+//            case 2:
+//                System.out.println("Your number is 2");
+//                break;
+//            case 3:
+//                System.out.println("Your number is 3");
+//                break;
+//            default:
+//                System.out.println("Wrong number. Your number is not 1 or 2 or 3. Please, enter correct number.");
+//        }
     }
 }
 
