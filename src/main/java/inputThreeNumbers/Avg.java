@@ -9,6 +9,8 @@ public class Avg {
         }
         System.out.println(sum / 100);
     }
+
+
 }
 
 
