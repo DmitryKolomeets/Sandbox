@@ -8,6 +8,8 @@ public class Table {
             System.out.print("3" + "*" + i + "=" + i * 3 + "\t");
             System.out.println();
         }
+
+
     }
 
 }
