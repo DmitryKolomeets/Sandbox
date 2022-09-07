@@ -14,15 +14,21 @@ public class User {
         this.surname = surname;
         this.password = password;
         this.email = email;
+
+        for (int i = 0; i < email.length(); i++) {
+            char c = email.charAt(i);
+            if (!(c != '@')) {
+                System.out.println("Email doesn't contain @ symbol. Please enter it");
+            }
+        }
         this.id = id;
-
-
 
     }
 
     public User(String password, String email) {
         this.password = password;
         this.email = email;
+
     }
 
 
@@ -45,10 +51,19 @@ public class User {
     public static void main(String[] args) {
 
         User user = new User("Vasya", "Petrov", "3217hd", "qwejkkjlk", 23);
+        User user1 = new User("asdlkjasljd", "qkwljedklqwjelk");
+
+
+        String str = "Otus — онлайн-образование";
+        System.out.println("Слово \"Otus\" есть в строке str? Ответ: " + str.contains("Otus"));
+        System.out.println("Символ \"z\" присутствует в строке str? Ответ: " + str.contains("z"));
+    }
+
+
 
     }
 
 
-}
+
 
 
