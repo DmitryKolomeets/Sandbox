@@ -1,6 +1,6 @@
 package JavaRush;
 
-public class Test {
+public class MultiplicationTable {
 
     public static int[][] MULTIPLICATION_TABLE;
 
