@@ -1,6 +1,6 @@
 package JavaRush.JavaRush_10;
 
-public class converterDecimalToBinary {
+public class ConverterDecimalToBinary {
 
     public static void main(String[] args) {
         int decimalNumber = 4;
