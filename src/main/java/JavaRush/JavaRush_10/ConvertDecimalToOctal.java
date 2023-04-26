@@ -1,9 +1,9 @@
-package JavaRush.JavaRush_Old;
+package JavaRush.JavaRush_10;
 
 
 
 
-public class convertDecimalToOctal {
+public class ConvertDecimalToOctal {
     public static void main(String[] args) {
         int decimalNumber = 21;
         System.out.println("Десятичное число " + decimalNumber + " равно восьмеричному числу " + toOctal(decimalNumber));
