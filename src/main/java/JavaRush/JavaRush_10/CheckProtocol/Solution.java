@@ -8,9 +8,15 @@ public class Solution {
             String protocol = checkProtocol(url);
             String domain = checkDomain(url);
 
+            domain.
+
             System.out.println("У URL-адреса - " + url + ", сетевой протокол - " + protocol + ", домен - " + domain);
         }
     }
+
+
+
+
 
     public static String checkProtocol(String url) {
         //напишите тут ваш код
