@@ -13,20 +13,18 @@ public class ConverterBinaryToHexademical {
     public static String toHex(String binaryNumber) {
         if (binaryNumber == null || binaryNumber.equals("")) {
             return "";
+        } else if (!binaryNumber.contains("1") || !binaryNumber.contains("0")) {
+            return "";
         } else {
-            for (int i = 0; i < binaryNumber.length(); i++) {
-                int number = Character.digit(binaryNumber.charAt(i), 10);
-                if (number != 0 || number != 1) {
-                    return "";
-                } else {
+            if (binaryNumber.length()%4==0) {
 
-                }
-            }
+            } else {}
         }
 
 
+
         return null;
-    }
+}
 
 //}
 
