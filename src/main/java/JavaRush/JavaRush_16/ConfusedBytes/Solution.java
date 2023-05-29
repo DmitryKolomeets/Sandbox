@@ -1,53 +1,36 @@
 package JavaRush.JavaRush_16.ConfusedBytes;
 
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 
 public class Solution {
 
-
     public static void main(String[] args) {
 
-        try (Scanner scanner = new Scanner(System.in); InputStream input = Files.newInputStream(Path.of(scanner.nextLine())); OutputStream output = Files.newOutputStream(Path.of(scanner.nextLine()))) {
-
-            byte[] buffer = new byte[65536];
-
-            while (input.available() > 0)
-            {
-                int real = input.read(buffer);
-            }
-
-
-            for (int i = 0; i < buffer.length; i++) {
-                if (buffer[i] == (buffer.length-1)
-                { if (buffer[i]%2==0)
-                {
-                    output.write(buffer[i]);
+        try (Scanner scanner = new Scanner(System.in); InputStream is = Files.newInputStream(Paths.get(scanner.nextLine()));
+             OutputStream os = Files.newOutputStream(Paths.get(scanner.nextLine()))) {
+            byte[] buffer = new byte[8192];
+            while (is.available() > 0) {
+                int read = is.read(buffer);
+                for (int i = 0; i < read; i += 2) {
+                    if (i + 1 == read) {
+                        break;
+                    } else {
+                        int tmp;
+                        tmp = buffer[i];
+                        buffer[i] = buffer[i + 1];
+                        buffer[i + 1] = (byte) tmp;
+                    }
                 }
-
-                }
-
-
-                byte first = buffer[i];
-                byte second = buffer[i+1];
-                buffer[i] = second;
-                buffer[i+1] = first;
+                os.write(buffer, 0, read);
             }
-
-
-
-
-            output.write(buffer);
 
         } catch (Exception e) {
-            System.out.println("something went wrong : " + e);
-            throw new RuntimeException();
-
-
+            throw new RuntimeException(e);
 
         }
     }
