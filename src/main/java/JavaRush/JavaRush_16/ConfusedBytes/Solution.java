@@ -31,7 +31,6 @@ public class Solution {
 
         } catch (Exception e) {
             throw new RuntimeException(e);
-
         }
     }
 }
