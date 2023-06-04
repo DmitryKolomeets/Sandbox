@@ -5,8 +5,7 @@
 //public class NewCalc {
 //
 //    Scanner scanner = new Scanner(System.in);
-//    startCalc();
-//
+ //
 //        while (true) {
 //
 //        System.out.println("Input: ");
