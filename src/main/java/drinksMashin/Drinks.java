@@ -2,12 +2,13 @@ package drinksMashin;
 
 public class Drinks {
 
-    final double coffeePrice = 5.65; // Price in Euro
-    final double teaPrice = 3.12;
-    final double lemonade = 12.55;
-    final double mojitoPrice = 18.7;
-    final double mineralWaterPrice = 4.30;
-    final double coccColaPrice = 7.45;
+    static final double coffeePrice = 5.65; // Price in Euro
+    static final double teaPrice = 3.12;
+    static final double lemonadePrice = 12.55;
+    static final double mojitoPrice = 18.7;
+    static final double mineralWaterPrice = 4.30;
+    static final double coccColaPrice = 7.45;
+
 
     public double getCoffeePrice() {
         return coffeePrice;
@@ -18,7 +19,7 @@ public class Drinks {
     }
 
     public double getLemonade() {
-        return lemonade;
+        return lemonadePrice;
     }
 
     public double getMojitoPrice() {
