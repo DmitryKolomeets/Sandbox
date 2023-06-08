@@ -3,6 +3,8 @@ package drinksMashin;
 import java.util.Objects;
 import java.util.Scanner;
 
+import static drinksMashin.DrinksMashine.LEMONADE;
+
 public class MakeADrink {
 
     static Scanner scanner = new Scanner(System.in);
@@ -10,8 +12,8 @@ public class MakeADrink {
     public static void start() {
         welcomeMenu();
         int quantity = scanQuantityOfDrink();
-        String name = scanNameOfDrink();
-        makeADrink(name, quantity);
+        String drink = scanNameOfDrink();
+        makeADrink(drink, quantity);
         resumeOrExit();
     }
 
@@ -25,6 +27,7 @@ public class MakeADrink {
         int quantity = 0;
         if (scanner.hasNextInt()) {
             quantity = scanner.nextInt();
+            System.out.println("k-vo napitka ==== " + quantity);
         } else {
             System.out.println("Please enter the quantity of drinks");
             quantity = scanner.nextInt();
@@ -35,40 +38,42 @@ public class MakeADrink {
 
     public static String scanNameOfDrink() {
         System.out.println("Please enter the name of drink: tea or coffe or lemonade or mojito or mineral water of cocca cola");
-        String name;
-        if (scanner.hasNext()) {
-            name = scanner.nextLine();
-        } else {
-            System.out.println("Incorrect name");
-            System.out.println("Please enter the name of drink: tea or coffe or lemonade or mojito or mineral water of cocca cola");
-            name = scanner.nextLine();
-        }
-        return name;
+        String drink = null;
+//        if(scanner.hasNext("tea")) {
+            drink = scanner.nextLine();
+            System.out.println("Napitok ==== " + drink);
+//        } else {
+//            System.out.println("Incorrect name ");
+//            System.out.println("Please enter the name of drink: tea or coffe or lemonade or mojito or mineral water of cocca cola");
+//            drink = scanner.nextLine().toLowerCase();
+//        }
+
+        return drink;
     }
 
 
     public static double makeADrink(String drink, int quantity) {
-        double cost = 0;
-        drink.toUpperCase();
-        switch (drink) {
 
-            case "TEA":
-                cost = quantity * Drinks.teaPrice;
+        double cost = 0;
+
+        switch (drink) {
+            case "tea":
+                System.out.println("tea ready");
+//                cost = quantity * Drinks.teaPrice;
                 break;
-            case "COFFE":
+            case "coffe":
                 cost = quantity * Drinks.coffeePrice;
                 break;
-            case "LEMONADE":
+            case "lemonade":
                 cost = quantity * Drinks.lemonadePrice;
                 break;
-            case "MOJITO":
+            case "mojito":
                 cost = quantity * Drinks.mojitoPrice;
                 break;
-
-            case "MINERAL WATER":
+            case "mineral water":
                 cost = quantity * Drinks.mineralWaterPrice;
                 break;
-            case "COCA COLA":
+            case "cocca cola":
                 cost = quantity * Drinks.coccColaPrice;
                 break;
             default:
@@ -99,3 +104,6 @@ public class MakeADrink {
 
 
 }
+
+
+

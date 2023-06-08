@@ -10,27 +10,5 @@ public class Drinks {
     static final double coccColaPrice = 7.45;
 
 
-    public double getCoffeePrice() {
-        return coffeePrice;
-    }
 
-    public double getTeaPrice() {
-        return teaPrice;
-    }
-
-    public double getLemonade() {
-        return lemonadePrice;
-    }
-
-    public double getMojitoPrice() {
-        return mojitoPrice;
-    }
-
-    public double getMineralWaterPrice() {
-        return mineralWaterPrice;
-    }
-
-    public double getCoccColaPrice() {
-        return coccColaPrice;
-    }
 }
