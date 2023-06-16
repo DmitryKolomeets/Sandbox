@@ -8,7 +8,7 @@ public class Solution {
     static ZonedDateTime zonedDateTime = ZonedDateTime.now();
 
     public static void main(String[] args) {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("e d.M.yy HH:mm:ss.n VV");
         String timeFormatted = dtf.format(zonedDateTime);
         System.out.println(timeFormatted);
     }
