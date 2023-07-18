@@ -3,30 +3,35 @@ package Test.Binary_Search;
 public class Binary {
 
 
-        public static void main(String[] args) {
-            int[] values = {1, 1, 2, 3, 4, 10};
-            int valueToFind = 3;
+    public static void main(String[] args) {
+        int[] values = {1, 1, 2, 3, 4, 10};
 
-            System.out.printf("Index = %d%n", binarySearch(values, valueToFind, 0, values.length - 1));
-        }
 
-        private static int binarySearch(int[] sortedArray, int valueToFind, int low, int high) {
-            int index = -1;
+        System.out.println(4);
 
-            while (low <= high) {
-                int mid = low + (high - low) / 2;
-                if (sortedArray[mid] < valueToFind) {
-                    low = mid + 1;
-                } else if (sortedArray[mid] > valueToFind) {
-                    high = mid - 1;
-                } else if (sortedArray[mid] == valueToFind) {
-                    index = mid;
-                    break;
-                }
-            }
-            return index;
-        }
 
     }
 
+    private static int binarySearch(int[] sortedArray, int key) {
+        int low = 0;
+        int high = sortedArray.length - 1;
+
+        while (low <= high) {
+            int middle = low + (high - low) / 2;
+
+            if (key < sortedArray[middle]) {
+                high = middle - 1;
+            } else if (key > sortedArray[middle]) {
+                low = middle + 1;
+            } else {
+                return middle;
+            }
+
+        }
+        return -1;
+    }
+
+
 }
+
+
