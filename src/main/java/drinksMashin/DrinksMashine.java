@@ -8,12 +8,16 @@ public enum DrinksMashine {
     LEMONADE("Lemonade"),
     MOJITO("Mojito"),
     MINERAL_WATER("Mineral water"),
-    COCA_COLA ("Coca Cola");
+    COCA_COLA("Coca Cola");
 
     public String drinkType;
 
     DrinksMashine(String drinkType) {
         this.drinkType = drinkType;
+    }
+
+    public String getDrinkType() {
+        return drinkType;
     }
 
 
