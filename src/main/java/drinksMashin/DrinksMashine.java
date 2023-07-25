@@ -8,7 +8,7 @@ public enum DrinksMashine {
     LEMONADE("Lemonade"),
     MOJITO("Mojito"),
     MINERAL_WATER("Mineral water"),
-    COCA_COLA("Coca Cola");
+    COLA("Coca Cola");
 
     public String drinkType;
 
