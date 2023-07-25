@@ -4,12 +4,12 @@ public class Drinks {
 
     static public int totalCost = 0;
 
-    static final double coffeePrice = 5.65; // Price in Euro
-    static final double teaPrice = 3.12;
-    static final double lemonadePrice = 12.55;
-    static final double mojitoPrice = 18.7;
-    static final double mineralWaterPrice = 4.30;
-    static final double coccColaPrice = 7.45;
+    static final int coffeePrice = 5; // Price in Euro
+    static final int teaPrice = 3;
+    static final int lemonadePrice = 12;
+    static final int mojitoPrice = 18;
+    static final int mineralWaterPrice = 4;
+    static final int coccColaPrice = 7;
 
 
     public static int coffeCount;
@@ -46,8 +46,33 @@ public class Drinks {
     }
 
 
+    public static void billing() {
+        if (coffeCount > coffeePrice) {
+            System.out.println("Your order is " + coffeCount / coffeePrice + " " + DrinksMashine.COFFEE.drinkType + " total cost is " + coffeCount + "$");
+        }
+
+        if (teaCount > teaPrice) {
+            System.out.println("Your order is " + teaCount / teaPrice + " " + DrinksMashine.TEA.drinkType + " total cost is " + teaCount + "$");
+        }
+
+        if (lemonadeCount > lemonadePrice) {
+            System.out.println("Your order is " + lemonadeCount / lemonadePrice + " " + DrinksMashine.LEMONADE.drinkType + " total cost is " + lemonadeCount + "$");
+        }
+
+        if (mojitoCount > mojitoPrice) {
+            System.out.println("Your order is " + mojitoCount / mojitoPrice + " " + DrinksMashine.MOJITO.drinkType + " total cost is " + mojitoCount + "$");
+        }
+
+        if (mineralWaterCount > mineralWaterPrice) {
+            System.out.println("Your order is " + mineralWaterCount / mineralWaterPrice + " " + DrinksMashine.MOJITO.drinkType + " total cost is " + mineralWaterCount + "$");
+        }
+
+        if (cocaColaCount > coccColaPrice) {
+            System.out.println("Your order is " + cocaColaCount / coccColaPrice + " " + DrinksMashine.COLA.drinkType + " total cost is " + cocaColaCount + "$");
+        }
 
 
+    }
 
 
 }
