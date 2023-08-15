@@ -17,9 +17,14 @@ public class Regex2 {
 //        Pattern pattern1 = Pattern.compile("\\W");
 //        Matcher matcher = pattern1.matcher(s1) ;
 
-        String s1 = "51 48 AA99 +12340923049 87 FSD94 33";
-        Pattern pattern1 = Pattern.compile("\\b \\d{2}\\b");
+//        String s1 = "ABCABABDA";
+//        Pattern pattern1 = Pattern.compile("(AB){2,3}");
+//        Matcher matcher = pattern1.matcher(s1) ;
+
+        String s1 = "abcd abcd4 afc4ced7 ";
+        Pattern pattern1 = Pattern.compile("[abcd][efgh3-8]");
         Matcher matcher = pattern1.matcher(s1) ;
+
 
 
 
