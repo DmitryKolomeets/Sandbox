@@ -13,9 +13,14 @@ public class Regex2 {
 //        String s1 = "abcd abce abc5abcg6abch";
 //        Pattern pattern1 = Pattern.compile("abc5abcg6abch$");
 
-        String s1 = "abcd abce abc5abcg6abch";
-        Pattern pattern1 = Pattern.compile("\\W");
+//        String s1 = "abcd abce abc5abcg6abch";
+//        Pattern pattern1 = Pattern.compile("\\W");
+//        Matcher matcher = pattern1.matcher(s1) ;
+
+        String s1 = "51 48 AA99 +12340923049 87 FSD94 33";
+        Pattern pattern1 = Pattern.compile("\\b \\d{2}\\b");
         Matcher matcher = pattern1.matcher(s1) ;
+
 
 
         while (matcher.find()) {
