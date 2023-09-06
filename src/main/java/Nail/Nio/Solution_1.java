@@ -15,15 +15,26 @@ public class Solution_1 {
         Path in = Paths.get("c:\\Users\\dmitr\\OneDrive\\Рабочий стол\\IN.txt");
         Path out = Paths.get("c:\\Users\\dmitr\\OneDrive\\Рабочий стол\\OUT.txt");
 
-        try (BufferedReader reader = Files.newBufferedReader(in); BufferedWriter writer = Files.newBufferedWriter(out)) {
+//        try (BufferedReader reader = Files.newBufferedReader(in); BufferedWriter writer = Files.newBufferedWriter(out)) {
+//
+//            String line;
+//            while ((line = reader.readLine()) != null) {
+//                writer.write(line + "\n");
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
-            String line;
-            while ((line = reader.readLine()) != null) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(src)); BufferedWriter writer = new BufferedWriter(new FileWriter(dest))) {
+            String line ;
+            while ((line = reader.readLine()) !=null) {
                 writer.write(line + "\n");
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 }
