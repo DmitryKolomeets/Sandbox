@@ -7,14 +7,35 @@ public class Expression {
 
     public static void main(String[] args) {
 
-        String expressionText = "22 + 3 - 2 * ( 2 * 5 + 2) * 4 ";
-        List<Lexeme> lexemes = lexAnalyze(expressionText);
+        /*------------------------------------------------------------------
+         * PARSER RULES
+         *------------------------------------------------------------------*/
 
+//    expr : plusminus* EOF ;
+//
+//    plusminus: multdiv ( ( '+' | '-' ) multdiv )* ;
+//
+//    multdiv : factor ( ( '*' | '/' ) factor )* ;
+//
+//    factor : NUMBER | '(' expr ')' ;
+
+
+
+
+
+
+//        22 + 3 - 2 * ( 2 * 5 + 2) * 4
+        String expressionText = "2 + 2 * 2";
+        List<Lexeme> lexemes = lexAnalyze(expressionText);
+        LexemBuffer lexemBuffer = new LexemBuffer(lexemes);
+        System.out.println(expr(lexemBuffer));
     }
 
     public enum LexemType {
-        LEFT_BRACKET, RIGHT_BRACKET, OP_PLUS,
-        OP_MINUS, OP_MUL, OP_DIV, NUMBER, EOF;
+        LEFT_BRACKET, RIGHT_BRACKET,
+        OP_PLUS, OP_MINUS, OP_MUL, OP_DIV,
+        NUMBER,
+        EOF;
     }
 
 
@@ -137,8 +158,10 @@ public class Expression {
             switch (lexeme.type) {
                 case OP_PLUS:
                     value += multdiv(lexemes);
+                    break;
                 case OP_MINUS:
                     value -= multdiv(lexemes);
+                    break;
                 default:
                     lexemes.back();
                     return value;
@@ -153,8 +176,10 @@ public class Expression {
             switch (lexeme.type) {
                 case OP_MUL:
                     value *= factor(lexemes);
+                    break;
                 case OP_DIV:
                     value /= factor(lexemes);
+                    break;
                 default:
                     lexemes.back();
                     return value;
