@@ -22,7 +22,7 @@ public class Human {
         public void workVeryHard();
     }
 
-    public static class Human implements Worker, Businessman, Secretary{
+    public static class Human2 implements Worker, Businessman, Secretary{
 
         public void workHard() {
         }
