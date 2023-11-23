@@ -46,13 +46,13 @@ public class Gym_80 {
     }
 
 
-    public static void main (String[]args){
-        Solution_Old solution = new Solution_Old();
-
-        String[] array = {"flower", "flow", "flight"};
-
-        System.out.println(solution.longestCommonPrefix(array));
-        System.out.println(solution.longestCommonPrefix(array));
-    }
+//    public static void main (String[]args){
+//        Solution_Old solution = new Solution_Old();
+//
+//        String[] array = {"flower", "flow", "flight"};
+//
+//        System.out.println(solution.longestCommonPrefix(array));
+//        System.out.println(solution.longestCommonPrefix(array));
+//    }
 
 }
