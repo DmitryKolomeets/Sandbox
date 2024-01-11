@@ -46,7 +46,7 @@ public class Gym_1 {
 
 
     public static void main (String[]args){
-
+        System.out.println("Hallo alles!!!!");
     }
 
 }
