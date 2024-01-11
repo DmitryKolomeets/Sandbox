@@ -6,6 +6,7 @@ public class Gym_1 {
 
         int map1[]=new int[200];
         int map2[]=new int[200];
+        int map3[]=new int[200];
 
         if(s.length()!=t.length())
             return false;

@@ -14,6 +14,7 @@ public class Gym_3 {
             } else {
                 set.add(nums[i]);
             }
+            System.out.println("");
         }
         return false;
     }
