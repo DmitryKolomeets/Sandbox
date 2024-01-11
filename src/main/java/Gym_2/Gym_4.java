@@ -19,6 +19,7 @@ public class Gym_4 {
                     nums[i - 1] = temp;
                     isSorted = false;
                 }
+                System.out.println("I am here");
             }
         }
         return nums;

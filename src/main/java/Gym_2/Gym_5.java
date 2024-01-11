@@ -17,6 +17,7 @@ public class Gym_5 {
                     return true;
                 } else {
                     hm.put(nums[i], i);
+                    System.out.println("testing");
                 }
             }
         }
