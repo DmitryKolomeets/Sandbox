@@ -7,6 +7,9 @@ public class Gym_2 {
     public static void main(String[] args) {
 
         String[] array = {"Норд", "Булка", "Букварь", "Нора", "Борис", "Ария", "Носок", "Блоха"};
+        String[] array2 = {"Норд", "Булка", "Букварь", "Нора", "Борис", "Ария", "Носок", "Блоха"};
+
+
 
         Arrays.sort(array);
 
