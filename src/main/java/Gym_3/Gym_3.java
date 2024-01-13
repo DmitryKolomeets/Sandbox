@@ -22,6 +22,7 @@ public class Gym_3 {
                 }
             }
         }
+        System.out.println("Enter  the Matrix!");
         return prefix;
     }
     // Test
