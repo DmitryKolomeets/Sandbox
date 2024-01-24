@@ -19,6 +19,7 @@ public class Gym_1 {
                 max = lenghtArray[i];
             }
         }
+        System.out.println("Welcome in Matrix");
 
         System.out.println("max==" + max);
 
