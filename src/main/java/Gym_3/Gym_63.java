@@ -13,11 +13,11 @@ public class Gym_63 {
     }
 
 
-    public static void main(String[] args) {
-
-        Solution solution = new Solution();
-        int answer = solution.lengthOfLastWord("luffy is still joyboy");
-        System.out.println(answer);
-    }
+//    public static void main(String[] args) {
+//
+//        Solution solution = new Solution();
+//        int answer = solution.lengthOfLastWord("luffy is still joyboy");
+//        System.out.println(answer);
+//    }
 
 }
