@@ -4,6 +4,7 @@ public class Gym_50 {
 
     public static int missingNumber(int[] nums) {
 
+        System.out.println("System error");
         int sum = 0;
 
         for (int i = 0; i < nums.length; i++) {
