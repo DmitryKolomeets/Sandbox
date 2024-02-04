@@ -9,7 +9,7 @@ public class Gym_38 {
 
         if(s.length()!=t.length())
             return false;
-
+        System.out.println("Privet");
 
         for(int i=0;i<s.length();i++)
         {
