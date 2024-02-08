@@ -14,6 +14,7 @@ public class Gym_51 {
         int number = xorArray ^ xorAll;
         System.out.println("number is====" + number);
         return xorArray ^ xorAll;
+
     }
 
 
@@ -22,7 +23,7 @@ public class Gym_51 {
 
     public static void main(String[] args) {
         missingNumber(new int[] {0,1}) ;
-
+        System.out.println("alles gut");
 
     }
 }
