@@ -36,8 +36,9 @@ public class Gym_67 {
     public static void main(String[] args) {
         String s = "anagram";
         String t = "agaram";
-
+        System.out.println("Alles gut");
         System.out.println(isAnagram(s,t));
+        System.out.println("Ich bin neu hier");
 
 
 
