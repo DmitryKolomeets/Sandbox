@@ -23,7 +23,7 @@ public class Gym_13 {
 
     public static void main(String[] args) {
         int result = removeElement(new int [] {3, 6, 7, 8, 9, 3, 0, 3}, 3);
-        System.out.println("Six day"k);
+        System.out.println("Six day");
         System.out.println(result);
 
     }
