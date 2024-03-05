@@ -28,12 +28,13 @@ public class Gym_57 {
         System.out.println(s.length());
         System.out.println(result);
         return result;
+
     }
 
     public static void main(String[] args) {
         romanToArabian("XXXIV");
 
-
+        System.out.println("System error");
 
     }
 
