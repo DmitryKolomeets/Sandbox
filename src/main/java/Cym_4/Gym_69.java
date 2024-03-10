@@ -19,7 +19,10 @@ public class Gym_69 {
             }
 
         }
+        System.out.println("result");
         return cand;
     }
+
+
 
 }
