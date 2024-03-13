@@ -57,6 +57,6 @@ public class Gym_74 {
         return result;
 
     }
-k
+
 
 }
