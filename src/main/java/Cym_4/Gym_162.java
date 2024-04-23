@@ -64,6 +64,6 @@ public class Gym_162 {
 
         String j = String.join(", ", (new String[]{"a", "b", "c"}));
         System.out.println(j);
-    }k
+    }
 
 }
