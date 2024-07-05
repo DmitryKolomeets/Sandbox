@@ -14,11 +14,15 @@ public class Gym_6 {
                 if(j==0 || j==i){
                     sum.add(1);
                 }
+
+
+
                 else{
                     sum.add(ans.get(i-1).get(j-1)+ans.get(i-1).get(j));
                 }
             }
             ans.add(sum);
+            System.out.println("proverka svayazi");
         }
 
         return ans.get(rowIndex);
