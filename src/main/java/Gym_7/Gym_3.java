@@ -16,7 +16,7 @@ public class Gym_3 {
             if(j>=0) sum += b.charAt(j) - '0';
             sb.append(sum%2);
             carry = sum/2;
-
+            System.out.println("proverka svayazi");
             i--;
             j--;
         }
