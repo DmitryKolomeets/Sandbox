@@ -49,6 +49,7 @@ public class Gym_32 {
             if(romanLetters[i] == 'C') {
                 if(romanLetters[i+1] == 'D' || romanLetters[i+1] == 'M') {
                     result = result - 200;
+                    System.out.println("result");
                 }
             }
 
